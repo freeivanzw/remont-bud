@@ -4,8 +4,8 @@
   font-weight: 400; }
 
 @font-face {
-  font-family: "Arial-Bold";
-  src: url("../fonts/Arial-BoldMT.otf") format("OpenType");
+  font-family: "Arial";
+  src: url("../fonts/Arial-BoldMT.ttf") format("TrueType");
   font-weight: 700; }
 
 @font-face {

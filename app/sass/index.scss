@@ -1,0 +1,163 @@
+body {
+    font-family: "Arial";
+    font-weight: 400;
+    min-width: 320px;
+}
+
+.content {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+header {
+    color: #fff;
+    background-image: url("../img/header-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10px;
+    padding-bottom: 68px;
+
+    .header-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .header-main__toggle {
+            display: flex;
+            align-items: center;
+            width: 30px;
+            height: 17px;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            padding: 0px;
+            position: relative;
+
+            span {
+                display: inline-block;
+                font-size: 0px;
+                width: 100%;
+                height: 3px;
+                background-color: #a6a6a6;
+                
+                &::after {
+                    content: "";
+                    width: 100%;
+                    height: 3px;
+                    background-color: #a6a6a6;
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    
+                }
+            
+                &::before {
+                    content: "";
+                    width: 100%;
+                    height: 3px;
+                    background-color: #a6a6a6;
+                    position: absolute;
+                    bottom: 0px;
+                    left: 0px;
+                    
+                }
+            }
+        }
+
+        .header-main__logo {
+            width: 152px;
+            height: 49px;
+            background-image: url("../img/header-logo-mobile.png");
+
+        }
+        
+        .header-main__price {
+            display: none;
+        }
+
+        .contacts-toggle {
+            width: 24px;
+            height: 24px;
+            padding: 0px;
+            border: 0px;
+            background-color: transparent;
+            outline: none;
+        }
+
+        .contacts {
+            display: none;
+        }
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+.header-body {
+
+    .header-body__inner {
+        
+
+
+        .header-body__title {
+            font-family: "Arial-Black";
+            font-size: 30px;
+            line-height: 36px;
+            margin-top: 90px;
+            margin-bottom: 80px;
+        }
+
+        .header-body__wrap {
+            display: flex;
+            flex-direction: column;
+
+            .header-body__btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: "Arial";
+                font-weight: 700;
+                font-size: 14px;
+                text-transform: uppercase;
+                padding: 0px;
+                width: 100%;
+                height: 50px;
+                background-color: #ffb215;
+                color: #fff;
+                outline: none;
+                border: none;
+                border-radius: 7px;
+                box-shadow: 1px 2px 7px -1px rgba(255, 178, 21, 0.62);
+                
+                span {
+                    margin-left: 14px;
+                }
+            }
+
+            .header-body__link {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: "Arial";
+                font-weight: 700;
+                font-size: 14px;
+                text-transform: uppercase;
+                text-decoration: none;
+                margin-top: 23px;
+                width: 100%;
+                height: 50px;
+                border: none;
+                border-radius: 7px;
+                background-color: #fff;
+                color: #431b0a;
+
+                span {
+                    margin-left: 14px;
+                }
+            }
+        }
+    }
+}
