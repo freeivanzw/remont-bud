@@ -10,7 +10,7 @@
 <body>
     <header>
         <div class="header-main content">
-            <button class="header-main__toggle">
+            <button class="header-main__open">
                 <span>Відкрити меню</span>
             </button>
             <div class="header-main__logo"></div>
@@ -32,7 +32,7 @@
         </div>
         <menu class="menu">
             <li class="menu__section">
-                <span>під ключ</span>
+                <span class="menu__toggle"  tabindex="1">під ключ</span>
                 <ul class="sub-menu">
                     <li class="sub-menu__section">
                         <a href="#">lorem lorem</a>
@@ -55,7 +55,7 @@
                 </ul>
             </li>
             <li class="menu__section">
-                <span>підготовка</span>
+                <span class="menu__toggle"  tabindex="1">підготовка</span>
                 <ul class="sub-menu">
                     <li class="sub-menu__section">
                         <a href="#">Демонтажні роботи</a>
@@ -78,7 +78,7 @@
                 </ul>
             </li>
             <li class="menu__section">
-                <span>електрика</span>
+                <span class="menu__toggle"  tabindex="1">електрика</span>
                 <ul class="sub-menu">
                     <li class="sub-menu__section">
                         <a href="#">lorem lorem</a>
@@ -101,7 +101,7 @@
                 </ul>
             </li>
             <li class="menu__section">
-                <span>сантехніка</span>
+                <span class="menu__toggle"  tabindex="1">сантехніка</span>
                 <ul class="sub-menu">
                     <li class="sub-menu__section">
                         <a href="#">lorem lorem</a>
@@ -124,7 +124,7 @@
                 </ul>
             </li>
             <li class="menu__section">
-                <span>опалення</span>
+                <span class="menu__toggle"  tabindex="1">опалення</span>
                 <ul class="sub-menu">
                     <li class="sub-menu__section">
                         <a href="#">lorem lorem</a>
@@ -147,7 +147,7 @@
                 </ul>
             </li>
             <li class="menu__section">
-                <span>оздоблення</span>
+                <span class="menu__toggle"  tabindex="1">оздоблення</span>
                 <ul class="sub-menu">
                     <li class="sub-menu__section">
                         <a href="#">lorem lorem</a>
@@ -170,7 +170,7 @@
                 </ul>
             </li>
             <li class="menu__section">
-                <span>столярка</span>
+                <span class="menu__toggle"  tabindex="1">столярка</span>
                 <ul class="sub-menu">
                     <li class="sub-menu__section">
                         <a href="#">lorem lorem</a>
@@ -193,7 +193,7 @@
                 </ul>
             </li>
             <li class="menu__section">
-                <span>будівництво</span>
+                <span class="menu__toggle"  tabindex="1">будівництво</span>
                 <ul class="sub-menu">
                     <li class="sub-menu__section">
                         <a href="#">lorem lorem</a>
@@ -215,6 +215,8 @@
                     </li>
                 </ul>
             </li>
+
+            <button class="header-main__close">закрити меню</button>
         </menu>
         <section class="header-body content">
             <div class="header-body__inner">
@@ -230,9 +232,10 @@
                     </a>
                 </div>
             </div>
-            
-
         </section>
     </header>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/srcript.js"></script>
 </body>
 </html>
