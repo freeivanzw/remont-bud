@@ -11,4 +11,8 @@ $(function(){
         arrows: false,
         dots: true,
     });
+
+    $('.price__parrent').overlayScrollbars({
+        overflowBehavior : x,
+    });
 });
