@@ -6,4 +6,9 @@ $(function(){
     $(".header-main__close").click(function(){
         $(".menu").removeClass("menu-active")
     })
+
+    $('.completed-slider').slick({
+        arrows: false,
+        dots: true,
+    });
 });
