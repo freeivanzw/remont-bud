@@ -966,3 +966,92 @@ header {
         
     }
 }
+
+.responds {
+    padding-top: 50px;
+    padding-bottom: 60px;
+
+    .responds__title {
+        text-align: center;
+        font-weight: 900;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: #431b0a;
+    }
+
+    .responds__inner {
+        margin-top: 40px;
+
+        .slick-list {
+            margin-bottom: 30px;
+        }
+
+        .responds__section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fff;
+            
+
+            .responds__section-inner {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: #f5f3f1;
+                padding-bottom: 32px;
+                width: 300px;
+                
+                .responds__circle {
+                    margin-top: 17px;
+                    margin-bottom: 8px;
+                    width: 82px;
+                    height: 82px;
+                    background-color: #f7dfc1;
+                    border-radius: 50%;
+                }
+            }
+            
+            .responds__circle {
+                margin-top: 17px;
+                margin-bottom: 8px;
+                width: 82px;
+                height: 82px;
+                background-color: #f7dfc1;
+                border-radius: 50%;
+            }
+
+            h3 {
+                font-weight: 700;
+                font-size: 14px;
+                text-transform: uppercase;
+                margin-bottom: 17px;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 20px;
+                color: #1a2326;
+                text-align: center;
+                opacity: 0.8;
+                width: 246px;
+            }
+        }
+    }
+
+    .responds__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 60px;
+        width: 224px;
+        height: 32px;
+        border: 2px solid #ffb215;
+        border-radius: 7px;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 14px;
+        color: #431b0a;
+       
+    }
+}

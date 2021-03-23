@@ -12,6 +12,11 @@ $(function(){
         dots: true,
     });
 
+    $('.responds__inner').slick({
+        arrows: false,
+        dots: true,
+    });
+
     $('.price__parrent').overlayScrollbars({
         overflowBehavior : x,
     });
