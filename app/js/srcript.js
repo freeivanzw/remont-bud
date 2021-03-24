@@ -1,6 +1,7 @@
 $(function(){
     $(".header-main__open").click(function(){
         $(".menu").addClass("menu-active")
+
     })
 
     $(".header-main__close").click(function(){
@@ -17,7 +18,5 @@ $(function(){
         dots: true,
     });
 
-    $('.price__parrent').overlayScrollbars({
-        overflowBehavior : x,
-    });
+    $('#example').overlayScrollbars({ });
 });

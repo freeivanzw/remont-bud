@@ -536,7 +536,8 @@ header {
     }
 
     .price__parrent {
-        overflow: hidden;
+        display: block;
+        overflow-y: hidden;
         overflow-x: scroll;
         background-color: #f5f3f1;
         border-radius: 6px;

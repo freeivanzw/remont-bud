@@ -391,7 +391,8 @@ header {
     text-transform: uppercase;
     margin-bottom: 32px; }
   .price .price__parrent {
-    overflow: hidden;
+    display: block;
+    overflow-y: hidden;
     overflow-x: scroll;
     background-color: #f5f3f1;
     border-radius: 6px;
