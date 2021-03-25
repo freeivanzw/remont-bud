@@ -1,11 +1,18 @@
 $(function(){
     $(".header-main__open").click(function(){
-        $(".menu").addClass("menu-active")
+        $(".menu").addClass("menu-active"),
+        $(".menu__active-shadow").addClass("menu__active-shadow-show")
 
     })
 
     $(".header-main__close").click(function(){
-        $(".menu").removeClass("menu-active")
+        $(".menu").removeClass("menu-active"),
+        $(".menu__active-shadow").removeClass("menu__active-shadow-show")
+    })
+
+    $(".menu__active-shadow").click(function(){
+        $(".menu").removeClass("menu-active"),
+        $(".menu__active-shadow").removeClass("menu__active-shadow-show")
     })
 
     var elem = $('.header-main');

@@ -211,6 +211,18 @@ header {
 .menu-active {
   display: flex; }
 
+.menu__active-shadow {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  opacity: 0.3;
+  display: none;
+  z-index: 8; }
+
+.menu__active-shadow-show {
+  display: block; }
+
 .header-body .header-body__inner .header-body__title {
   font-weight: 900;
   font-size: 30px;
