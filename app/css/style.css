@@ -824,6 +824,186 @@ header {
     font-size: 14px;
     color: #431b0a; }
 
+footer {
+  padding-top: 43px;
+  background-color: #000;
+  color: #fff; }
+  footer .footer__bottom {
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 44px;
+    padding-bottom: 34px; }
+    footer .footer__bottom p {
+      margin-top: 8px;
+      margin-bottom: 8px; }
+
+.question {
+  display: flex;
+  flex-direction: column; }
+  .question .question__title {
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 23px; }
+  .question .question__form {
+    display: flex;
+    flex-direction: column; }
+    .question .question__form .question__form-name, .question .question__form .question__form-tel {
+      display: block;
+      height: 43px;
+      padding-left: 40px;
+      border: none;
+      border-radius: 4px;
+      margin-bottom: 12px;
+      outline: none; }
+      .question .question__form .question__form-name::-webkit-input-placeholder, .question .question__form .question__form-tel::-webkit-input-placeholder {
+        font-family: "Arial";
+        font-size: 13px;
+        color: #727272; }
+    .question .question__form .question__form-massenge {
+      resize: none;
+      height: 63px;
+      padding-left: 40px;
+      border: none;
+      border-radius: 4px;
+      outline: none;
+      margin-bottom: 17px;
+      padding-top: 14px; }
+      .question .question__form .question__form-massenge::-webkit-input-placeholder {
+        font-family: "Arial";
+        font-size: 13px;
+        color: #727272; }
+    .question .question__form .question__form-name {
+      background-image: url("../img/question-icon-1.png");
+      background-repeat: no-repeat;
+      background-size: 14px, 14px;
+      background-position-x: 12px;
+      background-position-y: 13px; }
+    .question .question__form .question__form-tel {
+      background-image: url("../img/question-icon-2.png");
+      background-repeat: no-repeat;
+      background-size: 10px, 17px;
+      background-position-x: 14px;
+      background-position-y: 13px; }
+    .question .question__form .question__form-massenge {
+      background-image: url("../img/question-icon-3.png");
+      background-repeat: no-repeat;
+      background-size: 17px, 17px;
+      background-position-x: 12px;
+      background-position-y: 13px; }
+    .question .question__form .question__form-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 700;
+      font-size: 14px;
+      text-transform: uppercase;
+      padding: 0px;
+      width: 100%;
+      height: 50px;
+      background-color: #ffb215;
+      color: #fff;
+      outline: none;
+      border: none;
+      border-radius: 7px;
+      box-shadow: 1px 2px 7px -1px rgba(255, 178, 21, 0.62); }
+
+.details {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px; }
+  .details .details__logo {
+    width: 152px;
+    height: 49px;
+    margin-bottom: 35px; }
+  .details .details__title {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 14px; }
+  .details .details__viber {
+    margin-top: 11px;
+    margin-bottom: 11px;
+    padding-left: 42px;
+    font-family: "Arial";
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    position: relative; }
+    .details .details__viber::before {
+      content: "";
+      position: absolute;
+      left: 0px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 30px;
+      background-image: url("../img/header-viber.png");
+      background-repeat: no-repeat;
+      background-size: cover; }
+  .details .details__whatsapp {
+    margin-top: 11px;
+    margin-bottom: 11px;
+    padding-left: 42px;
+    font-family: "Arial";
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    position: relative; }
+    .details .details__whatsapp::before {
+      content: "";
+      position: absolute;
+      left: 0px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 30px;
+      background-image: url("../img/header-whatsapp.png");
+      background-repeat: no-repeat;
+      background-size: cover; }
+  .details .details__suptitle {
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 12px; }
+  .details .details__number {
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 4px; }
+
+.calculation {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px; }
+  .calculation .calculation__details {
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 22px; }
+  .calculation .calculation__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: #ffb215;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 1px 2px 7px -1px rgba(255, 178, 21, 0.62); }
+
 /****horizontal track***/
 .os-host-resize-disabled.os-host-scrollbar-vertical-hidden > .os-scrollbar-horizontal, .os-host-rtl.os-host-resize-disabled.os-host-scrollbar-vertical-hidden > .os-scrollbar-horizontal {
   position: absolute;
