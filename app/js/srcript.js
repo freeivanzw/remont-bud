@@ -16,12 +16,12 @@ $(function(){
     })
 
     var elem = $('.header-main');
-var doc = $(document);
-function scrolled() {
-   var threshold = doc.scrollTop() > 50;
-   elem.toggleClass('heder-scrolled', threshold);
-   }
-$(window).on({ scroll: scrolled });
+    var doc = $(document);
+    function scrolled() {
+        var threshold = doc.scrollTop() > 50;
+        elem.toggleClass('heder-scrolled', threshold);
+    }
+    $(window).on({ scroll: scrolled });
 
     $('.completed-slider').slick({
         arrows: false,

@@ -1,0 +1,24 @@
+@media screen and (min-width: 425px) {
+  .header-body__wrap .header-body__btn {
+    width: 238px !important; }
+  .header-body__wrap .header-body__link {
+    width: 302px !important; } }
+
+@media screen and (min-width: 575px) {
+  header {
+    background-image: url("../img/header-bg-decsktop.png");
+    background-position: center; }
+  .header-body__wrap {
+    flex-direction: row; }
+  .preference {
+    background-image: url("../img/preference-bg-desktop.png");
+    background-position: center; }
+    .preference .preference__inner .preference__section {
+      padding-top: 88px;
+      padding-bottom: 23px;
+      border-radius: 9px;
+      background-color: #28242e;
+      padding-left: 52px;
+      padding-right: 52px; }
+      .preference .preference__inner .preference__section::before {
+        top: 13px !important; } }
