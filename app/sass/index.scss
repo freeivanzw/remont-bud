@@ -26,6 +26,7 @@
             background-color: #a6a6a6;
             margin-right: 7.5px;
             margin-left: 7.5px;
+            outline: none;
         }
     }
 
@@ -535,20 +536,19 @@ header {
         
     }
 
-    .price__parrent {
+    .price__parrent {    
         display: block;
-        overflow-y: hidden;
         overflow-x: scroll;
         background-color: #f5f3f1;
-        border-radius: 6px;
-        padding-left: 10px;
 
 
         .price__description {
             display: flex;
             align-items: center;
+            margin-left: 10px;
+            margin-right: 10px;
             height: 60px;
-            width:  1085px;
+            width:  1070px;
             position: relative;
 
             span {
@@ -591,8 +591,9 @@ header {
         .price__child {
             display: flex;
             align-items: center;
-            width: 1085px;
+            width: 1070px;
             height: 55px;
+            margin-left: 10px;
             margin-bottom: 9px;
             padding-left: 20px;
             background-color: #fff;
@@ -668,6 +669,12 @@ header {
                     }
                 }
             }
+        }
+
+        .price__strut {
+            width: 1080px;
+            height: 30px;
+            background-color: #fff;
         }
     }
 }
@@ -983,6 +990,8 @@ header {
     .responds__inner {
         margin-top: 40px;
 
+        
+
         .slick-list {
             margin-bottom: 30px;
         }
@@ -992,6 +1001,8 @@ header {
             flex-direction: column;
             align-items: center;
             background-color: #fff;
+
+            
             
 
             .responds__section-inner {
@@ -1001,6 +1012,9 @@ header {
                 background-color: #f5f3f1;
                 padding-bottom: 32px;
                 width: 300px;
+                border-radius: 6px;
+
+                
                 
                 .responds__circle {
                     margin-top: 17px;
@@ -1009,33 +1023,51 @@ header {
                     height: 82px;
                     background-color: #f7dfc1;
                     border-radius: 50%;
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 65px;
+                        height: 65px;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        
+                    }
+                }
+
+                .responds__circle-one::before {
+                    background-image: url("../img/responds-user-1.png");
+                }
+
+                .responds__circle-two::before {
+                    background-image: url("../img/responds-user-2.png");
+                }
+
+                .responds__circle-three::before {
+                    background-image: url("../img/responds-user-3.png");
+                }
+    
+                h3 {
+                    font-weight: 700;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    margin-bottom: 17px;
+                }
+    
+                p {
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #1a2326;
+                    text-align: center;
+                    opacity: 0.8;
+                    width: 246px;
                 }
             }
             
-            .responds__circle {
-                margin-top: 17px;
-                margin-bottom: 8px;
-                width: 82px;
-                height: 82px;
-                background-color: #f7dfc1;
-                border-radius: 50%;
-            }
-
-            h3 {
-                font-weight: 700;
-                font-size: 14px;
-                text-transform: uppercase;
-                margin-bottom: 17px;
-            }
-
-            p {
-                font-size: 14px;
-                line-height: 20px;
-                color: #1a2326;
-                text-align: center;
-                opacity: 0.8;
-                width: 246px;
-            }
         }
     }
 
@@ -1055,4 +1087,21 @@ header {
         color: #431b0a;
        
     }
+}
+
+/****horizontal track***/
+
+.os-host-resize-disabled.os-host-scrollbar-vertical-hidden > .os-scrollbar-horizontal, .os-host-rtl.os-host-resize-disabled.os-host-scrollbar-vertical-hidden > .os-scrollbar-horizontal {
+    position: absolute;
+    height: 13px;
+    background-color: rgb(255, 255, 255);
+}
+
+.os-scrollbar-track {
+    background-color: #f5f3f1 !important;
+}
+
+.os-scrollbar-handle {
+    background-color: #ffb215 !important;
+    width: 50%  !important;
 }

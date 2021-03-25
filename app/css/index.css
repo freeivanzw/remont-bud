@@ -20,7 +20,8 @@
     border: none;
     background-color: #a6a6a6;
     margin-right: 7.5px;
-    margin-left: 7.5px; }
+    margin-left: 7.5px;
+    outline: none; }
   .slick-dots .slick-active button {
     background-color: #ffb215;
     position: relative; }
@@ -392,16 +393,15 @@ header {
     margin-bottom: 32px; }
   .price .price__parrent {
     display: block;
-    overflow-y: hidden;
     overflow-x: scroll;
-    background-color: #f5f3f1;
-    border-radius: 6px;
-    padding-left: 10px; }
+    background-color: #f5f3f1; }
     .price .price__parrent .price__description {
       display: flex;
       align-items: center;
+      margin-left: 10px;
+      margin-right: 10px;
       height: 60px;
-      width: 1085px;
+      width: 1070px;
       position: relative; }
       .price .price__parrent .price__description span {
         font-size: 14px;
@@ -427,8 +427,9 @@ header {
     .price .price__parrent .price__child {
       display: flex;
       align-items: center;
-      width: 1085px;
+      width: 1070px;
       height: 55px;
+      margin-left: 10px;
       margin-bottom: 9px;
       padding-left: 20px;
       background-color: #fff;
@@ -484,6 +485,10 @@ header {
             height: 29px;
             background-image: url("../img/price-checkbox-active.png");
             z-index: 2; }
+    .price .price__parrent .price__strut {
+      width: 1080px;
+      height: 30px;
+      background-color: #fff; }
 
 .result {
   margin-top: 63px; }
@@ -723,33 +728,44 @@ header {
         align-items: center;
         background-color: #f5f3f1;
         padding-bottom: 32px;
-        width: 300px; }
+        width: 300px;
+        border-radius: 6px; }
         .responds .responds__inner .responds__section .responds__section-inner .responds__circle {
           margin-top: 17px;
           margin-bottom: 8px;
           width: 82px;
           height: 82px;
           background-color: #f7dfc1;
-          border-radius: 50%; }
-      .responds .responds__inner .responds__section .responds__circle {
-        margin-top: 17px;
-        margin-bottom: 8px;
-        width: 82px;
-        height: 82px;
-        background-color: #f7dfc1;
-        border-radius: 50%; }
-      .responds .responds__inner .responds__section h3 {
-        font-weight: 700;
-        font-size: 14px;
-        text-transform: uppercase;
-        margin-bottom: 17px; }
-      .responds .responds__inner .responds__section p {
-        font-size: 14px;
-        line-height: 20px;
-        color: #1a2326;
-        text-align: center;
-        opacity: 0.8;
-        width: 246px; }
+          border-radius: 50%;
+          position: relative; }
+          .responds .responds__inner .responds__section .responds__section-inner .responds__circle::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 65px;
+            height: 65px;
+            background-repeat: no-repeat;
+            background-size: cover; }
+        .responds .responds__inner .responds__section .responds__section-inner .responds__circle-one::before {
+          background-image: url("../img/responds-user-1.png"); }
+        .responds .responds__inner .responds__section .responds__section-inner .responds__circle-two::before {
+          background-image: url("../img/responds-user-2.png"); }
+        .responds .responds__inner .responds__section .responds__section-inner .responds__circle-three::before {
+          background-image: url("../img/responds-user-3.png"); }
+        .responds .responds__inner .responds__section .responds__section-inner h3 {
+          font-weight: 700;
+          font-size: 14px;
+          text-transform: uppercase;
+          margin-bottom: 17px; }
+        .responds .responds__inner .responds__section .responds__section-inner p {
+          font-size: 14px;
+          line-height: 20px;
+          color: #1a2326;
+          text-align: center;
+          opacity: 0.8;
+          width: 246px; }
   .responds .responds__link {
     display: flex;
     justify-content: center;
@@ -764,3 +780,16 @@ header {
     font-weight: 700;
     font-size: 14px;
     color: #431b0a; }
+
+/****horizontal track***/
+.os-host-resize-disabled.os-host-scrollbar-vertical-hidden > .os-scrollbar-horizontal, .os-host-rtl.os-host-resize-disabled.os-host-scrollbar-vertical-hidden > .os-scrollbar-horizontal {
+  position: absolute;
+  height: 13px;
+  background-color: white; }
+
+.os-scrollbar-track {
+  background-color: #f5f3f1 !important; }
+
+.os-scrollbar-handle {
+  background-color: #ffb215 !important;
+  width: 50%  !important; }
