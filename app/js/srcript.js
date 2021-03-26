@@ -30,11 +30,41 @@ $(function(){
     $('.completed-slider').slick({
         arrows: false,
         dots: true,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },{
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
+            }
+            }
+        ],
+        mobileFirst: true,
     });
 
     $('.responds__inner').slick({
         arrows: false,
         dots: true,
+        
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },{
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
+                    dots: false,
+            }
+            }
+        ],
+        mobileFirst: true,
     });
 
     $('#example').overlayScrollbars({ });
