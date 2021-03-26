@@ -167,7 +167,7 @@ header {
 }
 
 .menu__wrap {
-    display: none;
+    display: block;
 }
 
 .menu {
@@ -317,9 +317,7 @@ header {
     }
 }
 
-.menu-active {
-    display: flex;
-}
+
 
 .menu__active-shadow {
     position: fixed;
@@ -330,6 +328,11 @@ header {
     display: none;
     z-index: 8;
 }
+
+.menu-active {
+    display: block;
+}
+
 
 .menu__active-shadow-show {
     display: block;
@@ -1497,6 +1500,7 @@ footer {
     }
 }
 
+
 /****horizontal track***/
 
 .os-host-resize-disabled.os-host-scrollbar-vertical-hidden > .os-scrollbar-horizontal, .os-host-rtl.os-host-resize-disabled.os-host-scrollbar-vertical-hidden > .os-scrollbar-horizontal {
@@ -1509,7 +1513,7 @@ footer {
     background-color: #f5f3f1 ;
 }
 
-.os-scrollbar-handle {
+.os-theme-dark.os-host-transition > .os-scrollbar > .os-scrollbar-track > .os-scrollbar-handle, .os-theme-light.os-host-transition > .os-scrollbar > .os-scrollbar-track > .os-scrollbar-handle {
     background-color: #ffb215 ;
     width: 50%  !important;
 }
