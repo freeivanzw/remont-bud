@@ -27,7 +27,13 @@ function imgMin () {
     .pipe(gulp.dest("./app/img/"));
 };
 
+// function build () {
+//     return gulp.src([
+//         "./app/css."
+//     ])
+// }
+
 exports.compiller = compiller;  // компиляція scss - css
 exports.watch = gulp.series(compiller, watch);  // scss вотчер-компиляція
 exports.cssmin = cssmin;        
-exports.imgmin = imgMin;        
+exports.imgmin = imgMin;

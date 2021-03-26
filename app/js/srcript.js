@@ -15,6 +15,19 @@ $(function(){
         $(".menu__active-shadow").removeClass("menu__active-shadow-show")
     });
 
+    
+
+    $(".header-body__btn").click(function(){
+        $(".menu__form").addClass("menu__form-active")
+        
+    });
+
+    $(".menu__close").click(function(){
+        $(".menu__form").removeClass("menu__form-active")
+        
+    });
+
+
     $(".calculation__details").click(function(){
         $(".calculation__show").toggleClass("calculation__show-active")
     });
@@ -41,6 +54,12 @@ $(function(){
                 settings: {
                     slidesToShow: 3,
             }
+            },{
+                breakpoint: 1236,
+                settings: {
+                    slidesToShow: 3,
+                    arrows: true,
+            }
             }
         ],
         mobileFirst: true,
@@ -61,6 +80,13 @@ $(function(){
                 settings: {
                     slidesToShow: 3,
                     dots: false,
+            }
+            },{
+                breakpoint: 1236,
+                settings: {
+                    slidesToShow: 3,
+                    dots: false,
+                    arrows: true,
             }
             }
         ],
