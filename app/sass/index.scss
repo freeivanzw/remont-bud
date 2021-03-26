@@ -2268,6 +2268,10 @@ footer {
 }
 
 @media (min-width: 1130px) {
+    header {
+        padding-bottom: 125px;
+    }
+
     .preference__inner {
         justify-content: center;
     }
