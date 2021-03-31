@@ -137,8 +137,8 @@ header {
 
 .header-main {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-around;
   padding-top: 10px;
   padding-bottom: 10px;
   width: 100%;
@@ -162,12 +162,12 @@ header {
     font-size: 0px;
     width: 100%;
     height: 3px;
-    background-color: #cecece; }
+    background-color: #a6a6a6; }
     .header-main__open span::after {
       content: "";
       width: 100%;
       height: 3px;
-      background-color: #cecece;
+      background-color: #a6a6a6;
       position: absolute;
       top: 0px;
       left: 0px; }
@@ -175,7 +175,7 @@ header {
       content: "";
       width: 100%;
       height: 3px;
-      background-color: #cecece;
+      background-color: #a6a6a6;
       position: absolute;
       bottom: 0px;
       left: 0px; }
@@ -581,7 +581,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 7px; }
+  margin-top: 20px; }
 
 .preference__section {
   display: flex;
@@ -730,7 +730,7 @@ header {
 .price__child {
   display: flex;
   align-items: center;
-  width: 1070px;
+  width: 1090px;
   height: 55px;
   margin-left: 10px;
   margin-bottom: 9px;
@@ -747,7 +747,10 @@ header {
 .price__unit {
   position: absolute;
   left: 490px;
-  transform: translateX(-50%); }
+  transform: translateX(-50%);
+  font-weight: 14px; }
+  .price__unit sup {
+    font-size: 8px; }
 
 .price__cost {
   position: absolute;
@@ -757,6 +760,7 @@ header {
 .price__number {
   text-align: center;
   width: 62px;
+  height: 30px;
   position: absolute;
   left: 765px;
   transform: translateX(-50%);
@@ -838,7 +842,7 @@ header {
   .result__sum:first-child {
     margin-bottom: 5px; }
   .result__sum:nth-child(2) {
-    margin-bottom: 30px; }
+    margin-bottom: 20px; }
 
 .result__submit {
   display: flex;
@@ -1532,8 +1536,10 @@ footer {
     margin-right: 10px;
     background-image: url("../img/header-logo-deck.png"); }
   .header-main__price {
-    display: block;
+    display: flex;
+    align-items: center;
     padding: 0px;
+    padding-left: 55px;
     width: 200px;
     height: 42px;
     cursor: pointer;
@@ -1543,7 +1549,19 @@ footer {
     color: #431b0a;
     font-weight: 400;
     font-size: 14px;
-    transition: 0.5s; }
+    transition: 0.5s;
+    position: relative; }
+    .header-main__price::after {
+      content: "";
+      position: absolute;
+      left: 18px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 26px;
+      background-image: url("../img/header-icon.png");
+      background-repeat: no-repeat;
+      background-position: center; }
     .header-main__price:hover {
       background-color: #ffb215;
       color: #fff;
@@ -1579,7 +1597,9 @@ footer {
     margin-left: 10px;
     background-image: url("../img/header-viber.png"); }
   .contacts__connect {
-    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    height: 20px;
     color: #431b0a;
     position: relative;
     font-size: 14px; }
@@ -1664,22 +1684,24 @@ footer {
     font-size: 36px;
     margin-bottom: 50px; }
   .completed {
-    margin-top: 80px;
+    margin-top: 70px;
     margin-bottom: 90px; }
   .completed-title {
     font-size: 36px;
     margin-bottom: 55px; }
   .preference {
-    padding-top: 90px;
+    padding-top: 85px;
     padding-bottom: 95px; }
   .preference__title {
     font-size: 36px; }
   .price {
-    margin-top: 85px;
+    margin-top: 70px;
     padding-bottom: 85px; }
   .price__title {
     font-size: 36px;
     margin-bottom: 42px; }
+  .info-price__title, .agree__title {
+    font-size: 36px; }
   .price__strut {
     width: 100%; }
   .info {
@@ -1751,7 +1773,7 @@ footer {
       height: 100%;
       width: 2px;
       background-color: #707070;
-      opacity: 0.8; }
+      opacity: 0.5; }
     .footer__calculation::after {
       content: "";
       position: absolute;
@@ -1759,7 +1781,7 @@ footer {
       height: 100%;
       width: 2px;
       background-color: #707070;
-      opacity: 0.8; }
+      opacity: 0.5; }
   .footer__question {
     order: 3; }
   .footer__bottom {
@@ -1768,11 +1790,54 @@ footer {
 
 @media (min-width: 1130px) {
   header {
-    padding-bottom: 125px; }
+    padding-bottom: 0px;
+    background-image: none; }
+  .header-main {
+    justify-content: flex-start; }
+  .header-main__logo {
+    margin-left: 65px;
+    margin-right: 0px; }
+  .header-main__price {
+    margin-left: 125px; }
+  .contacts {
+    margin-left: 120px; }
+  .contacts__phone {
+    font-size: 16px; }
   .preference__inner {
     justify-content: center; }
   .preference__section:nth-child(2) {
     margin-left: 30px;
     margin-right: 30px; }
   .preference__section:nth-child(4) {
-    margin-right: 30px; } }
+    margin-right: 30px; }
+  .result {
+    margin-top: 0px; }
+  .header-body {
+    padding-top: 120px;
+    padding-bottom: 130px;
+    background-image: url("../img/header-bg-decsktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+  .header-body__title {
+    margin-top: 0px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    max-width: 680px; }
+  .completed-section {
+    width: 380px; }
+  .completed-section__inner {
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto; }
+    .completed-section__inner img {
+      width: 100%;
+      height: 350px; }
+    .completed-section__inner p {
+      padding-left: 0px; }
+  footer {
+    padding-top: 0px; }
+  .footer__question {
+    width: 256px;
+    padding-left: 0px;
+    padding-right: 0px; } }
